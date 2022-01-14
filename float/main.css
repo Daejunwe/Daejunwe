@@ -2,7 +2,10 @@
 
 
 *{
- font-size: 15px;
+ font-size: 14px;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box ;
 }
 
 body{
@@ -11,9 +14,72 @@ body{
     height: 100%;
 }
 
+ul, li{
+    list-style: none;
+    
+}
+
+a {
+    text-decoration : none;
+    color : #000;
+}
+
+
 .wrap{
-    background-color: tomato;
     width: 100%;
     max-width: 800px;
    margin: 0 auto;
+}
+header{
+
+}
+
+.top{
+    background-color: #1b4fa0;
+    width: 100%;
+}
+
+.top .bg{
+    background-color:  #143b78;
+    color : #fff;
+    font-size:  0.8rem;
+    padding : 10px 20px;
+    float: left;
+}
+.top .gnb li{
+    display: inline-block;
+    text-align: right;
+}
+
+.top .bg {
+    display: inline-block;
+}
+.top .bg a:hover{
+    color: #eee;
+}
+.top .gnb li a{
+    color : #fff;
+    display: block;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+nav .logo{
+    float: left;
+    padding: 16px 0;
+}
+
+nav .lnb li{
+    display:  inline-block;
+}
+
+nav .lnb li a{
+    display: block;
+    padding: 27px 0;
+    font-size:  1.2rem;
+    font-weight: 600;
+    text-align:  center;
+}
+
+nav .lnb li a:hover{
+    color #005baa;
 }
