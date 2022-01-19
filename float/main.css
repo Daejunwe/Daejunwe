@@ -1,85 +1,85 @@
 @charset 'utf-8';
 
-
-*{
- font-size: 14px;
- margin: 0;
- padding: 0;
- box-sizing: border-box ;
+/* 공통 */
+* {
+    font-size: 14px; 
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
 }
-
-body{
+body {
     background-color: #fff;
     width: 100%;
     height: 100%;
 }
-
-ul, li{
+ul, li {
     list-style: none;
-    
 }
-
-a {
-    text-decoration : none;
-    color : #000;
+a, a:hover, a:link, a:active {
+    text-decoration: none;
+    color: #222;
 }
-
-
-.wrap{
+b, strong {
+    font-weight: 600;
+}
+.wrap {
     width: 100%;
-    max-width: 800px;
-   margin: 0 auto;
-}
-header{
-
+    max-width: 800px;    
+    margin: 0 auto;
 }
 
-.top{
+/* 헤더 */
+header {
+
+}
+.top {
     background-color: #1b4fa0;
     width: 100%;
 }
-
-.top .bg{
-    background-color:  #143b78;
-    color : #fff;
-    font-size:  0.8rem;
-    padding : 10px 20px;
-    float: left;
-}
-.top .gnb li{
-    display: inline-block;
-    text-align: right;
-}
-
 .top .bg {
-    display: inline-block;
+    float: left;
+    background-color: #143b78;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 10px 20px;
 }
-.top .bg a:hover{
+.top .bg:hover {
     color: #eee;
 }
-.top .gnb li a{
-    color : #fff;
+.top .gnb {
+    text-align: right;
+}
+.top .gnb li {
+    display: inline-block;
+}
+.top .gnb li a {
+    color: #fff;
     display: block;
     padding: 10px 15px;
-    font-size: 15px;
+    font-size: 0.8rem;
 }
-nav .logo{
+.top .gnb li a:hover {
+    color: #eee;
+}
+nav {
+    background-color: #eee;
+}
+nav .logo {
     float: left;
-    padding: 16px 0;
+    padding: 6px 0;
+    padding-right: 15px;
 }
-
-nav .lnb li{
-    display:  inline-block;
+nav .lnb li {
+    display: inline-block;
+    width: 14%;
 }
-
-nav .lnb li a{
+nav .lnb li a {
     display: block;
     padding: 27px 0;
-    font-size:  1.2rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    text-align:  center;
+    text-align: center;
 }
-
-nav .lnb li a:hover{
-    color #005baa;
+nav .lnb li a:hover {
+    color: #005baa;
 }
