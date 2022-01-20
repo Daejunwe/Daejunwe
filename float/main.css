@@ -1,85 +1,455 @@
-@charset 'utf-8';
+@charset "utf-8";
+/* 변수 선언 */
+:root {
+    --img-box1: url('https://www.icqa.or.kr/images/cn/box1_1_bg.png');
+    --img-box2: url('https://www.icqa.or.kr/images/cn/box1_2_bg.png');
+    --img-box3: url('https://www.icqa.or.kr/images/cn/box1_3_bg.png');
+    --img-box4: url('https://www.icqa.or.kr/images/cn/box1_4_bg.png');
+    --img-box5: url('imgs/benner.png');
+}
 
 /* 공통 */
-* {
-    font-size: 14px; 
-    margin: 0;   
-    padding: 0;
+*{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
-body {
-    background-color: #fff;
+
+body{
     width: 100%;
     height: 100%;
+    background-color:  #ffff;
 }
+
 ul, li {
-    list-style: none;
+   list-style: none; 
 }
+
 a, a:hover, a:link, a:active {
     text-decoration: none;
     color: #222;
 }
-b, strong {
-    font-weight: 600;
-}
+
 .wrap {
     width: 100%;
-    max-width: 800px;    
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* 헤더 */
-header {
-
+.bold{
+    font-weight: 600;
 }
+/* float */
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* float */
+
+/* font-color */
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+.gray{
+    color: gray;
+}
+/* font-color */
+
+/* width */
+.w50{
+    width: 50px;
+}
+.w100{
+    width:100px;
+}
+.w200{
+    width:200px;
+}
+.w32p{
+    width:32%;
+}
+.w66p{
+    width: 66%;
+}
+/* width */
+
+/* height */
+.h50{
+    height: 50px;
+}
+.h100{
+    height: 100px;
+}
+.h200{
+    height: 200px;
+}
+/* height */
+
+/* background-color*/
+.bg_red{
+    background-color: red;
+}
+.bg_blue{
+    background-color:  blue;
+}
+.bg_white{
+    background-color: white;
+}
+.bg_black{
+    background-color: black;
+}
+/* background-color */
+
+/* size */
+.big{
+    font-size: 2em;
+}
+.small{
+    font-size: 0.5em
+}
+/* size */
+
+/* margin */
+.m10{
+    margin: 10px;
+}
+.m50{
+    margin: 50px;
+}
+.m100{
+    margin: 100px;
+}
+.m12p{
+    margin: 12%;
+}
+.ml10{
+    margin-left: 10px;
+}
+.mt100{
+    margin-top: 100px;
+}
+/* margin */
+
+/* padding */
+.p10{
+    padding: 10px;
+}
+.p50{
+    padding: 50px;
+}
+.p100{
+    padding: 100px;
+}
+.pt100{
+    padding-top: 100px;
+}
+/* padding */
+
+
+
+/* 상단 */
 .top {
     background-color: #1b4fa0;
     width: 100%;
 }
 .top .bg {
-    float: left;
     background-color: #143b78;
-    color: #fff;
-    font-size: 0.8rem;
+    color: white;
     padding: 10px 20px;
+    font-size: 0.5rem;
+    float: left;
 }
 .top .bg:hover {
-    color: #eee;
+    color: #ccc;
 }
 .top .gnb {
     text-align: right;
 }
-.top .gnb li {
+.top ul li  {
     display: inline-block;
 }
-.top .gnb li a {
-    color: #fff;
+.top ul li a {
     display: block;
     padding: 10px 15px;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+    color: white;
 }
-.top .gnb li a:hover {
-    color: #eee;
+.top ul li a:hover {
+    color: #ccc;
 }
 nav {
     background-color: #eee;
+    padding: 2px;
 }
 nav .logo {
     float: left;
-    padding: 6px 0;
-    padding-right: 15px;
+    padding: 7px 0;
+    width: 30%;
+}
+nav .lnb {
+    width: 70%;
+    display: inline-block;
 }
 nav .lnb li {
-    display: inline-block;
-    width: 14%;
+    float: left;
+    width: 20%;
 }
 nav .lnb li a {
     display: block;
     padding: 27px 0;
-    font-size: 1.2rem;
     font-weight: 600;
+    font-size:  0.9rem;
     text-align: center;
 }
-nav .lnb li a:hover {
-    color: #005baa;
+nav .lnb li a:hover{
+    color: #005baa
+}
+/* 상단 */
+
+/* 메인 */
+
+section {
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* section 1*/
+
+#section1{
+    margin-top: 0px;
+    width: 100%;
+    height: 230px;
+    display: inline-block;
+    background-color: #e0dfe4;
+}
+/* section 1 */
+
+/* section2 */
+#section2 ul li {
+    float: left;
+    min-height: 255px;
+    text-align: center;
+    width: 23%;
+    margin-left: 2%;
+}
+#section2 ul li a {
+    color: white;
+    display: block;
+    width: 100%;
+} 
+#section2 ul li h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-top: 90px;
+}
+#section2 ul li p {
+    font-size:  0.5rem;    
+    border: 1px white solid;
+    padding: 0px 5px;
+    display: inline-block;
+    color: #fff;
+}
+#section2 .box {
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#section2 #box1 {
+    margin-left: 30px;
+    background-color: #00a882;
+    margin-left: 0;
+    background-image: var(--img-box1)
+}
+#section2 #box1:hover {
+    background-color: #00c29a;
+}
+#section2 #box2 {
+    background-color: #2263c8;
+    background-image: var(--img-box2)
+}
+#section2 #box2:hover {
+    background-color: #2875db;
+}
+#section2 #box3 {
+    background-color: #2083cb;
+    background-image: var(--img-box3)
+}
+#section2 #box3:hover {
+    background-color: #2592df;
+}
+#section2 #box4 {
+    background-color: #f6893e;
+    background-image: var(--img-box4)
+}
+#section2 #box4:hover {
+    background-color: #ff944c;
+}
+/* section2 */
+
+/* section3 */
+#section3 .right{
+    padding: 6px;
+    border: solid 1px #eee;
+    width: 55%;
+    height: 235px;
+}
+#section3 .board_title {
+    padding: 4px;
+    border-bottom: solid blue;
+}
+#section3#gj{
+  font-size: 0.8rem;
+}
+#section3 #more{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.6rem;
+    float:  right;
+    color: blue
+}
+#section3 .board_content a{
+    font-size:  0.7rem;
+    font-weight: 600;
+    padding: 10px 80px;
+    display: inline-block;
+    float : center;
+    background: url(https://www.icqa.or.kr/images/cn/bullet1.png) no-repeat left center;
+}
+ #section3 .board_content span{
+     margin-top: 15px;
+     margin-right: 50px ;
+     font-size: 0.6rem;
+    color : #e0dfe4;
+    display: inline-block;
+    float : right;
+}
+
+#section3 .board_content li:nth-child(even){
+    background-color: #eee;
+}
+#section3 .board_content a:hover{
+  color : red;
+}
+/* section3 */
+
+/* section4 */
+#section4{
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+    display: inline-block;
+    background-color: #e0dfe4;
+}
+#section4 .left{
+    margin-top: 15px;
+    width: 250px;
+    height: 120px;
+    background-color: #e0dfe4;
+    background: url(imgs/benner2.png);
+}
+#section4 .center{
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 250px;
+    height: 110px;
+    background-color: #19b5d6;
+    background: url(imgs/benner3.png);
+}
+#section4 .right{
+    margin-top: 15px;
+    width: 250px;
+    height: 100px;
+    background-color: #fff;
+    background: url(imgs/benner4.png);
+}
+
+#section4 .gon{
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+}
+#section4 .gon p{
+    text-align: center;
+    display: inline-block;
+    height: 80px;
+    padding: 25px 30px;
+    background-color: #2263c8;
+    color: #fff;
+    float: left;
+}
+#section4 .gon ul li{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 0 20px;
+    border-right: solid 2px ;
+}
+#section4 .gon ul li a{
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+}
+#section4 .gon ul li a:hover{
+    color: blue;
+}
+#section4 #no{
+border-right: none ;
+}
+/* section4 */
+
+/* 하단 */
+
+footer{
+   border-top:  1px solid #ddd;
+   color:  #666;
+   padding: 20px 0;
+}
+footer .logo{
+    margin: 20px 40px;
+}
+footer img {
+    float: left;
+    padding: 15px 0;
+}
+footer ul{
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+footer ul li {
+    display: inline-block;
+    border-right:  1px solid #888;
+}
+footer ul li:last-child{
+    border: none;
+}
+footer p {
+    text-align: left;
+    font-size: 0.6rem;
+    color: #666;
+    line-height: 30px;
+}
+footer ul li a{
+    margin: 20px;
+    text-align: left;
+    font-size: 0.7rem;
 }
